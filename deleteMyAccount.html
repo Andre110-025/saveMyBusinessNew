@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SMB - Delete My Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/SMB_AppIcon.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      header.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px; /* more padding for breathing space */
+        transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0); /* transparent initial */
+        color: #fff; /* text on dark bg initially */
+      }
+
+      header.header.scrolled {
+        background: #fff; /* white bg when scrolled */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        color: #05716c; /* text color for contrast on white */
+      }
+
+      header.header .logo {
+        height: 50px; /* slightly bigger logo */
+      }
+
+      header.header .contactBtn {
+        text-decoration: none;
+        font-weight: 500;
+        color: inherit; /* inherit text color from header */
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: background 0.3s;
+      }
+
+      header.header .contactBtn:hover {
+        background: rgba(0, 0, 0, 0.05); /* subtle hover effect */
+      }
+
+      main.delete-account-container {
+        margin-top: 100px; /* leave space for taller fixed header */
+      }
+      .delete-account-container {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      .delete-account-container h1 {
+        font-size: 2rem;
+        color: #111827;
+        margin-bottom: 10px;
+      }
+      .delete-account-container p {
+        color: #4b5563;
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+      .steps {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .steps li {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      .steps li span {
+        display: inline-block;
+        min-width: 30px;
+        height: 30px;
+        background: #ef4444;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      .steps li p {
+        margin: 0;
+        color: #4b5563;
+      }
+      .tips {
+        background: #fee2e2;
+        padding: 15px;
+        border-radius: 8px;
+        color: #b91c1c;
+        margin-top: 20px;
+      }
+      .back-dashboard {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #05716c;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+      .illustration {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .illustration img {
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/SMB_Logo.png" class="logo" alt="SMB Logo" />
+      <a href="contactUs.html" class="contactBtn">Contact us</a>
+    </header>
+
+    <main class="delete-account-container">
+      <h1>How to Delete Your SMB Account</h1>
+      <p>
+        If you wish to permanently delete your SMB account, follow these simple
+        steps below. Please note that deleting your account is
+        <strong>permanent and cannot be undone</strong>.
+      </p>
+
+      <ul class="steps">
+        <li>
+          <span>1</span>
+          <p>Open the SMB app and log in to your account.</p>
+        </li>
+        <li>
+          <span>2</span>
+          <p>Tap the hamburger menu (☰) at the top-left corner of the app.</p>
+        </li>
+        <li>
+          <span>3</span>
+          <p>
+            Scroll down and select the <strong>"Delete Account"</strong> option.
+          </p>
+        </li>
+        <li>
+          <span>4</span>
+          <p>
+            Confirm your decision when prompted. Your account will be
+            permanently deleted.
+          </p>
+        </li>
+      </ul>
+
+      <div class="tips">
+        <strong>Tip:</strong> Make sure to back up any important data before
+        deleting your account, as all data will be lost after deletion.
+      </div>
+
+      <a href="index.html" class="back-dashboard">Back to Homepage</a>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-column footer-about">
+          <img src="images/SMB_Logo.png" alt="SMB logo" class="footer-logo" />
+          <p class="footer-desc">
+            The trusted solution for business, shops, institutions, and day2day
+            — designed to streamline operations and improve delivery.
+          </p>
+        </div>
+        <div class="footer-column footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privacyAndPolicy.html">Privacy and policy</a></li>
+            <li><a href="termsOfUse.html">Terms of use</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header.header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>

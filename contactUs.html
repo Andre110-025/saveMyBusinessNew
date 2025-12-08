@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Save-my-business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/SMB_AppIcon.png" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/SMB_AppIcon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/16x16.png"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/stylesContactUs.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <nav class="navbar">
+        <div class="nav-container">
+          <img src="images/SMB_Logo.png" alt="Store Hive Logo" class="nav-logo" />
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="activeBtn">Home</a>
+            </li>
+          </ul>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">
+            <!-- Hamburger SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-hamburger"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
+              <path fill="c" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+            </svg>
+            <!-- X (close) SVG -->
+            <svg
+              class="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </label>
+
+          <!-- Navigation Links -->
+          <ul class="nav mobile-nav">
+            <li class="links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#4B5563"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+              >
+                <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                <path
+                  fill="currentColor"
+                  d="M4 20v-9.375L2.2 12l-1.175-1.575L12 2l11 8.4l-1.2 1.6L12 4.5L6 9.1V18h4v2zm13.5 2.375q-1.05.725-2.312.613t-2.163-1.013t-1.012-2.162t.612-2.313q-.725-1.05-.612-2.312t1.012-2.163t2.163-1.012t2.312.612q1.05-.725 2.313-.612t2.162 1.012t1.013 2.163t-.613 2.312q.725 1.05.613 2.313t-1.013 2.162t-2.162 1.013t-2.313-.613m0-2.45l1.15.8q.45.325.975.275t.925-.45t.45-.925t-.275-.975l-.8-1.15l.8-1.15q.325-.45.275-.975t-.45-.925t-.925-.45t-.975.275l-1.15.8l-1.15-.8q-.45-.325-.975-.275t-.925.45t-.45.925t.275.975l.8 1.15l-.8 1.15q-.325.45-.275.975t.45.925t.925.45t.975-.275zm0-1.175q.525 0 .888-.363t.362-.887t-.363-.888t-.887-.362t-.888.363t-.362.887t.363.888t.887.362m0-1.25"
+                />
+              </svg>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="links">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                <path
+                  fill="none"
+                  stroke="#4B5563"
+                  d="m12 3.19l7 3.11V11c0 4.52-2.98 8.69-7 9.93c-4.02-1.24-7-5.41-7-9.93V6.3zM12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5zm-1 6h2v2h-2zm0 4h2v6h-2z"
+                />
+              </svg>
+              <a href="privacyAndPolicy.html">Privacy Policy</a>
+            </li>
+            <li class="links">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                <g fill="none" stroke="#4B5563" stroke-width="1.5">
+                  <circle cx="9" cy="9" r="2" />
+                  <path d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2s1.79-2 4-2s4 .895 4 2Z" />
+                  <path
+                    d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"
+                  />
+                  <path stroke-linecap="round" d="M19 12h-4m4-3h-5m5 6h-3" />
+                </g>
+              </svg>
+              <a href="termsOfUse.html">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Contact us today</h1>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>How can we help you today?</h2>
+      <div class="card-grid">
+        <div class="card" data-inquiry="general">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+            <!-- Icon from Streamline by Streamline - https://creativecommons.org/licenses/by/4.0/ -->
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="m4.5 12.5l-4 1l1-3v-9a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1Zm3-9.5v3"
+              />
+              <circle cx="7.5" cy="9" r=".5" />
+            </g>
+          </svg>
+          <h3>General Questions</h3>
+          <p>
+            Have a question about our services, features, or how it works? We’re happy to
+            guide you.
+          </p>
+        </div>
+        <div class="card" data-inquiry="dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="32" viewBox="0 0 63 64">
+            <!-- Icon from Medical Icons by Samuel Frémondière - https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE -->
+            <path
+              fill="currentColor"
+              d="M32.82 3.582c11.119 0 20.031 9.165 20.031 20.284c0 4.391-.85 7.214-3.395 10.78c-3.373 4.688-6.62 7.468-6.62 13.239v4.414c0 5.474-4.711 9.676-10.184 9.676c-5.539 0-10.185-4.391-10.185-9.93c0-1.316.975-2.463 2.292-2.463c1.994 0 1.909 2.568 2.631 4.415c.891 2.249 2.736 3.564 5.177 3.564c3.119 0 5.856-2.312 5.856-5.432v-4.923c0-9.952 10.185-13.473 10.185-23.425c0-8.806-7.152-15.956-15.957-15.956c-5.454 0-9.294 1.782-12.563 6.111c-1.931 2.568-2.801 4.456-3.225 7.638c-.255 1.973-.295 4.584-2.291 4.584c-1.316 0-2.292-1.146-2.292-2.462c-.001-11.202 9.335-20.114 20.539-20.114z"
+            />
+            <path
+              fill="currentColor"
+              d="M32.225 9.692c7.894 0 14.683 6.027 14.683 13.92c0 1.018-.679 2.036-1.697 2.036c-1.104 0-1.358-1.294-1.528-2.376c-.382-2.376-.574-3.904-1.868-5.94c-2.121-3.332-5.197-4.414-9.165-4.414c-3.756 0-6.429 1.252-8.658 4.243c-1.21 1.614-1.965 3.771-2.346 5.766c-.297 1.634.035 2.892-1.641 2.892c-1.04 0-1.613-1.082-1.613-2.123c.002-7.681 6.155-14.004 13.835-14.004zM7.946 41.01l7.345 7.345l-1.834 1.834l-7.345-7.345zm3.695-3.694l7.346 7.346l-1.835 1.835l-7.346-7.346zm3.819-3.866l7.345 7.347l-1.834 1.834l-7.345-7.347zm4.437-4.312l7.345 7.347l-1.835 1.834l-7.345-7.347z"
+            />
+            <path
+              fill="currentColor"
+              d="m24.011 25.259l7.345 7.345l-1.834 1.834l-7.345-7.345zm4.181-4.572l7.345 7.347l-1.835 1.834l-7.345-7.347zM48.855 4.494l2.982 2.982l-1.927 1.927l-2.982-2.982zM52.733.59l2.981 2.982l-1.928 1.927l-2.981-2.982z"
+            />
+          </svg>
+          <h3>Dashboard Assistance</h3>
+          <p>
+            Need help navigating the dashboard or customizing features? We’ll get you sorted
+            quickly.
+          </p>
+        </div>
+        <div class="card" data-inquiry="support">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+            <!-- Icon from Streamline by Streamline - https://creativecommons.org/licenses/by/4.0/ -->
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.284 3.503a1.621 1.621 0 1 0 3.242 0a1.621 1.621 0 1 0-3.242 0" />
+              <path
+                d="M8.473 8.367v-.81a2.432 2.432 0 0 1 4.865 0v.81M6.6 8.369h6.738M3.604 5.612a1.712 1.712 0 1 0 0-3.425a1.712 1.712 0 0 0 0 3.425"
+              />
+              <path
+                d="M6.6 8.609a2.996 2.996 0 1 0-5.993 0v1.284h1.285l.428 3.424h2.568l.428-3.424H6.6z"
+              />
+            </g>
+          </svg>
+          <h3>Customer Support</h3>
+          <p>
+            Encountered an issue with your dashboard or need assistance using its features? Our
+            support team is here to help.
+          </p>
+        </div>
+        <div class="card" data-inquiry="business">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <!-- Icon from Ultimate free icons by Streamline - https://creativecommons.org/licenses/by/4.0/ -->
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M10.144 7.094A2.22 2.22 0 0 0 12 7.969c1.139 0 2.063-.693 2.063-1.547S13.14 4.876 12 4.876s-2.06-.693-2.06-1.548s.923-1.547 2.06-1.547a2.22 2.22 0 0 1 1.858.875m-1.856 5.313V9m0-8.25v1.031M1.502 6.75a3 3 0 1 0 6 0a3 3 0 0 0-6 0m6.75 10.5V15a3.75 3.75 0 0 0-7.5 0v2.25h1.5l.75 6H6l.75-6zm8.25-10.5a3 3 0 1 0 6 0a3 3 0 0 0-6 0m6.75 10.5V15a3.75 3.75 0 0 0-7.5 0v2.25h1.5l.75 6h3l.75-6z"
+            />
+          </svg>
+          <h3>Business Inquiries</h3>
+          <p>
+            Interested in a custom dashboard solution or partnership opportunities? Get in touch and
+            let’s explore how we can work together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="general-section">
+      <h2>Questions? We’re Here to Guide You</h2>
+
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the purpose of this dashboard?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The dashboard gives you a real-time snapshot of your business — sales, profit, stock
+              levels, top-selling items, and key customer insights — all in one place.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does SMB help me manage inventory?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can track live stock levels, set low-stock alerts, manage product details and
+              pricing, and even bulk import products with a CSV file.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I track product expiration dates?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, StoreHive alerts you when products are nearing expiry, helping you avoid waste
+              and keep your shelves updated.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How are sales processed in SMB?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sales are handled with a simple two-step process: order creation and payment
+              confirmation. You can also view full order history, track payments, and manage
+              returns.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What kind of reports and analytics are available?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can generate sales, profit, and stock reports, identify top and slow-moving
+              products, track customer performance, and view complete activity logs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I manage customers in SMB?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              SMB includes a customer database where you can add or edit details, view
+              purchase history, track total sales, and generate receipts.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can multiple staff use SMB?</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, you can create staff accounts, assign custom roles, control permissions, and keep
+              your data secure with reliable backup and encryption.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assist-container">
+      <h2>Need help navigating the dashboard or customizing features?</h2>
+      <p class="assist-sub">
+        Choose your preferred support channel below — we’ll get you sorted quickly.
+      </p>
+
+      <div class="assist-links">
+        <a href="mailto:support@savemybusiness.com.ng" target="_blank" class="assist-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+            <path
+              fill="currentColor"
+              d="M7 17q-.825 0-1.412-.587T5 15V5q0-.825.588-1.412T7 3h14q.825 0 1.413.588T23 5v10q0 .825-.587 1.413T21 17zm7-4.7L7 7.425V15h14V7.425zm0-2.45L21 5H7zM3 21q-.825 0-1.412-.587T1 19V6.5h2V19h16.5v2zM21 7.35V5H7v2.35V5h14z"
+            />
+          </svg>
+          <span>Email Support</span>
+        </a>
+
+        <a href="https://wa.me/1234567890" target="_blank" class="assist-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.52 3.48A11.84 11.84 0 0 0 12 0C5.38 0 0 5.38 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.2-1.63A11.94 11.94 0 0 0 12 24c6.62 0 12-5.38 12-12 0-3.19-1.24-6.2-3.48-8.52zM12 22a9.93 9.93 0 0 1-5.08-1.39l-.36-.21-3.68.97.99-3.59-.23-.37A9.94 9.94 0 0 1 2 12C2 6.49 6.49 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22 12c0 5.51-4.49 10-10 10zm5.41-7.6c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.67.15c-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.18-1.42-.07-.13-.27-.2-.57-.35z"
+            />
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="https://twitter.com/savemybusiness" target="_blank" class="assist-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.597l-5.17-6.759-5.91 6.759H1.5l7.73-8.828L1.89 2.25H8.64l4.713 6.234 4.89-6.234zM17.19 19.602h1.833L7.935 4.286H6.003L17.19 19.602z"
+            />
+          </svg>
+          <span>X</span>
+        </a>
+
+        <a href="https://linkedin.com/company/savemybusiness" target="_blank" class="assist-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+            <!-- Icon from FormKit Icons by FormKit, Inc - https://github.com/formkit/formkit/blob/master/packages/icons/LICENSE -->
+            <path
+              fill="currentColor"
+              d="M3.44 4.89c.8 0 1.44-.65 1.44-1.44s-.65-1.44-1.44-1.44S2 2.66 2 3.45s.65 1.44 1.44 1.44m2.81 1.09V14h2.48v-3.96c0-1.05.2-2.06 1.49-2.06s1.29 1.2 1.29 2.12V14H14V9.6c0-2.16-.46-3.82-2.98-3.82c-1.21 0-2.02.66-2.35 1.29h-.03v-1.1H6.26Zm-4.05 0h2.49V14H2.2z"
+            />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="support-section">
+      <section class="container-msg" id="contactFormSection">
+        <div class="msg-section">
+          <h2>
+            Encountered an issue with our service or need assistance? Our support team is here for
+            you.
+          </h2>
+          <form action="/submit_contact" method="POST" id="support-section">
+            <div class="form-group">
+              <label for="firstName">Full Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address </label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message </label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="send">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <section class="business-section">
+      <h2>
+        Looking to partner with us or explore wholesale opportunities? Let’s connect and
+        collaborate.
+      </h2>
+      <p class="form-intro">
+        Please provide your details below and our business team will get back to you as soon as
+        possible.
+      </p>
+      <form class="business-form" action="/submit_business" method="POST" id="businessForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="companyName">Company Name </label>
+            <input type="text" id="companyName" name="companyName" required />
+          </div>
+          <div class="form-group">
+            <label for="contactPerson">Contact Person </label>
+            <input type="text" id="contactPerson" name="contactPerson" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="businessEmail">Email Address </label>
+            <input type="email" id="businessEmail" name="businessEmail" required />
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" id="phoneNumber" name="phoneNumber" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="proposal">Inquiry Details </label>
+          <textarea
+            id="proposal"
+            name="proposal"
+            rows="4"
+            placeholder="Tell us how you’d like to collaborate..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="send">Send Inquiry</button>
+      </form>
+    </section>
+
+    <!-- </section> -->
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="">
+          <h2>Run Your Business Anywhere</h2>
+          <p>Track sales, inventory, and customers — right from your dashboard.</p>
+          <a href="https://app.savemybusiness.com.ng" class="download-btn2" target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-column footer-about">
+          <img
+            src="images/SMB_Logo.png"
+            alt="SMB logo"
+            class="footer-logo"
+          />
+          <p class="footer-desc">
+            The trusted solution for business, shops, institutions, and day2day — designed to streamline
+            operations and improve and optimize delivery.
+          </p>
+        </div>
+
+        <div class="footer-column footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privacyAndPolicy.html">Privacy and policy</a></li>
+            <li><a href="termsOfUse.html">Terms of use</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-app">
+          <h4>Get the App</h4>
+          <div class="store-buttons">
+            <a href="#" class="store-btn" aria-label="Download on Google Play">
+              <img src="images/playStore.png" alt="Play Store" />
+            </a>
+            <a href="#" class="store-btn2" aria-label="Download on App Store">
+              <img src="images/Anuradha_Kumari_says_-removebg-preview.png" alt="App Store" />
+            </a>
+          </div>
+
+          <div class="socials" aria-label="Follow StoreHive">
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.29 10.44 22v-7.03H8.08v-2.9h2.36V9.41c0-2.33 1.4-3.61 3.44-3.61.99 0 2.03.18 2.03.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42v1.69h2.5l-.4 2.9h-2.1V22C18.34 21.29 22 17.1 22 12.07z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" aria-label="X" class="social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.597l-5.17-6.759-5.91 6.759H1.5l7.73-8.828L1.89 2.25H8.64l4.713 6.234 4.89-6.234zM17.19 19.602h1.833L7.935 4.286H6.003L17.19 19.602z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" aria-label="WhatsApp" class="social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.84 11.84 0 0 0 12 0C5.38 0 0 5.38 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.2-1.63A11.94 11.94 0 0 0 12 24c6.62 0 12-5.38 12-12 0-3.19-1.24-6.2-3.48-8.52zM12 22a9.93 9.93 0 0 1-5.08-1.39l-.36-.21-3.68.97.99-3.59-.23-.37A9.94 9.94 0 0 1 2 12C2 6.49 6.49 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22 12c0 5.51-4.49 10-10 10zm5.41-7.6c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.67.15c-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.18-1.42-.07-.13-.27-.2-.57-.35z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <span>© 2025 SMB. All rights reserved.</span>
+          <nav class="footer-legal">
+            <a href="privacyAndPolicy.html">Privacy and policy</a>
+            <a href="termsOfUse.html">Terms of use</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/indexContact.js"></script>
+  </body>
+</html>

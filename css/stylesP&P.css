@@ -1,0 +1,97 @@
+@import url('https://fonts.bunny.net/css?family=figtree:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared header styles for both pages */
+.policy-header,
+.terms-header {
+  text-align: center;
+  background: linear-gradient(135deg, #045b58, #067a76);
+  color: #fff;
+  padding: 60px 20px;
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
+}
+
+.policy-header h1,
+.terms-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.policy-header p,
+.terms-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Shared container styles */
+.policy-container,
+.terms-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.policy-container section,
+.terms-container section {
+  background: #fff;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-container section:hover,
+.terms-container section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  color: #045b58;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #045b58;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Special styled button-like links */
+.terms-link,
+.privacy-link {
+  display: inline-block;
+  margin-top: 15px;
+  background: #045b58;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.terms-link:hover,
+.privacy-link:hover {
+  background: #067a76;
+  transform: translateY(-3px);
+}
