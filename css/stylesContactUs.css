@@ -780,6 +780,18 @@ textarea {
   color: #fff;
 }
 
+.footer-credit {
+  font-size: 15px;
+  color: var(--muted-2); /* gray-400 */
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-credit:hover {
+  color:  #fff; 
+}
+
 .store-buttons {
   display: flex;
   gap: 12px;
@@ -1184,9 +1196,9 @@ textarea {
   .cta-container h2 { font-size: 1.1rem; }
 
 
-  .download-btn2 {
+  /* .download-btn2 {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 400px) {

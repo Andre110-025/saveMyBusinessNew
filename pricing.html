@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Save-my-business-pricing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/SMB_AppIcon.png" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/SMB_AppIcon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/16x16.png" />
+    <link rel="stylesheet" href="css/pricing.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://script.botconvo.com/chatbot-widget.css"
+    />
+
+    <chatbot-widget
+      website="https://savemybusiness.com.ng/"
+      api="pk_220pRXW1UiYRhJqdrXH2dBNrp1NRm1uBENGNljIfhPH"
+    >
+    </chatbot-widget>
+
+    <script src="https://script.botconvo.com/chatbot-widget.iife.js"></script>
+  </head>
+  <body>
+    <!-- <p>Hello people</p> -->
+    <script src="scripts/indexPricing.js"></script>
+    <section class="hero">
+      <div class="header">
+        <img src="images/SMB_Logo.png" class="logo" />
+        <!-- <a href="contact.html" class="contactBtn">Contact us</a> -->
+        <div class="yeap">
+          <a href="index.html" class="pricingBtn">Home</a>
+          <a href="contactUs.html" class="contactBtn">Contact us</a>
+          <a href="contactUs.html" class="contactBtn">Get Started</a>
+          <button class="mobView" id="menuBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
+              <path fill="c" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="overlay" class="overlay"></div>
+
+      <div class="sideMenu" id="sideMenu">
+        <button class="closeBtn" id="closeBtn">&times;</button>
+        <ul>
+          <li class="links">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Huge Icons by Hugeicons - undefined -->
+              <g fill="none" stroke="#4B5563" stroke-width="1.5">
+                <path
+                  d="M4.5 10c0-3.771 0-5.657 1.172-6.828S8.729 2 12.5 2H14c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10v4c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-1.5c-3.771 0-5.657 0-6.828-1.172S4.5 17.771 4.5 14z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 6H2m2.5 6H2m2.5 6H2m13.275-9.507a2 2 0 1 1-4 0a2 2 0 0 1 4 0M9.32 15.716c1.058-1.63 2.739-2.24 3.955-2.239s2.847.61 3.906 2.24a.33.33 0 0 1 .025.344c-.247.439-1.016 1.31-1.57 1.369c-.638.067-2.307.077-2.36.077s-1.773-.01-2.41-.077c-.556-.06-1.324-.93-1.572-1.37c-.061-.109-.043-.238.026-.344"
+                />
+              </g>
+            </svg>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="links">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#4B5563"
+                d="m12 3.19l7 3.11V11c0 4.52-2.98 8.69-7 9.93c-4.02-1.24-7-5.41-7-9.93V6.3zM12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5zm-1 6h2v2h-2zm0 4h2v6h-2z"
+              />
+            </svg>
+            <a href="privacyAndPolicy.html">Privacy Policy</a>
+          </li>
+          <li class="links">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+              <g fill="none" stroke="#4B5563" stroke-width="1.5">
+                <circle cx="9" cy="9" r="2" />
+                <path
+                  d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2s1.79-2 4-2s4 .895 4 2Z"
+                />
+                <path
+                  d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"
+                />
+                <path stroke-linecap="round" d="M19 12h-4m4-3h-5m5 6h-3" />
+              </g>
+            </svg>
+            <a href="termsOfUse.html">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-content">
+        <h1>Simple pricing for growing businesses</h1>
+        <p>
+          No hidden fees, no complicated plans. Just straightforward pricing
+          that scales with your business.
+        </p>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <h2 class="pricing-title">Simple, transparent pricing</h2>
+      <p class="pricing-subtitle">
+        ₦3,000 per month with complete access. Choose a subscription duration
+        that works for your business.
+      </p>
+
+      <div class="pricing-grid">
+        <!-- 1 Month -->
+        <div class="pricing-card">
+          <span class="plan-badge">Flexible</span>
+          <h3>1 Month</h3>
+          <p class="price">₦3,000<span>/month</span></p>
+          <ul>
+            <li>All tools enabled from day one</li>
+
+            <li>Cancel anytime</li>
+          </ul>
+          <p class="pricing-note">Best for trying StoreHive</p>
+        </div>
+
+        <!-- 3 Months -->
+        <div class="pricing-card">
+          <span class="plan-badge">Popular</span>
+          <h3>3 Months</h3>
+          <p class="price">₦9,000<span>/3 months</span></p>
+          <ul>
+            <li>All tools enabled from day one</li>
+
+            <li>Short-term commitment</li>
+          </ul>
+          <p class="pricing-note">Good balance of value & flexibility</p>
+        </div>
+
+        <!-- 6 Months -->
+        <div class="pricing-card featured">
+          <span class="plan-badge highlight">Best Value</span>
+          <h3>6 Months</h3>
+          <p class="price">₦18,000<span>/6 months</span></p>
+          <ul>
+            <li>All tools enabled from day one</li>
+
+            <li>Longer access, less hassle</li>
+          </ul>
+          <p class="pricing-note">Most chosen by growing businesses</p>
+        </div>
+
+        <!-- 1 Year -->
+        <div class="pricing-card">
+          <span class="plan-badge">Save Time</span>
+          <h3>1 Year</h3>
+          <p class="price">₦36,000<span>/year</span></p>
+          <ul>
+            <li>All tools enabled from day one</li>
+
+            <li>One-time yearly setup</li>
+          </ul>
+          <p class="pricing-note">Ideal for established stores</p>
+        </div>
+
+        <!-- 2 Years -->
+        <!-- <div class="pricing-card">
+          <span class="plan-badge">Long Term</span>
+          <h3>2 Years</h3>
+          <p class="price">₦72,000<span>/2 years</span></p>
+          <ul>
+            <li>All tools enabled from day one</li>
+
+            <li>Peace of mind</li>
+          </ul>
+          <p class="pricing-note">For serious long-term users</p>
+        </div>
+
+        <!-- 5 Years 
+        <div class="pricing-card">
+          <span class="plan-badge">Commitment</span>
+          <h3>5 Years</h3>
+          <p class="price">₦180,000<span>/5 years</span></p>
+          <ul>
+            <li>All tools enabled from day one</li>
+
+            <li>Maximum stability</li>
+          </ul>
+          <p class="pricing-note">Best for businesses planning ahead</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="pricing-faq">
+      <h3>Frequently asked questions</h3>
+
+      <div class="faq-item">
+        <h4>Do all plans include the same features?</h4>
+        <p>
+          Yes. Every subscription gives full access to SMB. The only
+          difference is the duration.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Where do I make payment?</h4>
+        <p>
+          Payments are completed inside the SMB Dashboard using Paystack
+          after account setup.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Can I upgrade or extend my subscription?</h4>
+        <p>
+          Yes. You can extend or change your subscription duration at any time.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-column footer-about">
+          <img src="images/SMB_Logo.png" alt="SMB logo" class="footer-logo" />
+          <p class="footer-desc">
+            The trusted solution for business, shops, institutions, and day2day
+            — designed to streamline operations and improve and optimize
+            delivery.
+          </p>
+        </div>
+
+        <div class="footer-column footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privacyAndPolicy.html">Privacy and policy</a></li>
+            <li><a href="termsOfUse.html">Terms of use</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-app">
+          <h4>Get the App</h4>
+          <div class="store-buttons">
+            <a href="#" class="store-btn" aria-label="Download on Google Play">
+              <img src="images/playStore.png" alt="Play Store" />
+            </a>
+            <a href="#" class="store-btn2" aria-label="Download on App Store">
+              <img
+                src="images/Anuradha_Kumari_says_-removebg-preview.png"
+                alt="App Store"
+              />
+            </a>
+          </div>
+
+          <div class="socials" aria-label="Follow StoreHive">
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.29 10.44 22v-7.03H8.08v-2.9h2.36V9.41c0-2.33 1.4-3.61 3.44-3.61.99 0 2.03.18 2.03.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42v1.69h2.5l-.4 2.9h-2.1V22C18.34 21.29 22 17.1 22 12.07z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" aria-label="X" class="social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.597l-5.17-6.759-5.91 6.759H1.5l7.73-8.828L1.89 2.25H8.64l4.713 6.234 4.89-6.234zM17.19 19.602h1.833L7.935 4.286H6.003L17.19 19.602z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://wa.me/2347081046759"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="social-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.84 11.84 0 0 0 12 0C5.38 0 0 5.38 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.2-1.63A11.94 11.94 0 0 0 12 24c6.62 0 12-5.38 12-12 0-3.19-1.24-6.2-3.48-8.52zM12 22a9.93 9.93 0 0 1-5.08-1.39l-.36-.21-3.68.97.99-3.59-.23-.37A9.94 9.94 0 0 1 2 12C2 6.49 6.49 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.94 9.94 0 0 1 22 12c0 5.51-4.49 10-10 10zm5.41-7.6c-.3-.15-1.77-.87-2.04-.97s-.47-.15-.67.15c-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.18-1.42-.07-.13-.27-.2-.57-.35z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <a
+            href="https://www.gesoftech.com/"
+            target="_blank"
+            class="footer-credit"
+          >
+            A product from © Golden Edge Softech
+          </a>
+          <nav class="footer-legal">
+            <a href="privacyAndPolicy.html">Privacy and policy</a>
+            <a href="termsOfUse.html">Terms of use</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

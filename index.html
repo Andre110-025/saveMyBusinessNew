@@ -10,32 +10,49 @@
       sizes="180x180"
       href="images/SMB_AppIcon.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/16x16.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/16x16.png" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://script.botconvo.com/chatbot-widget.css"
+    />
+
+    <chatbot-widget
+      website="https://savemybusiness.com.ng/"
+      api="pk_220pRXW1UiYRhJqdrXH2dBNrp1NRm1uBENGNljIfhPH"
+    >
+    </chatbot-widget>
+
+    <script src="https://script.botconvo.com/chatbot-widget.iife.js"></script>
   </head>
   <body>
     <script src="scripts/index.js"></script>
     <section class="hero">
       <div class="header">
         <img src="images/SMB_Logo.png" class="logo" />
-        <a href="contactUs.html" class="contactBtn">Contact us</a>
-        <button class="mobView" id="menuBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-            <!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
-            <path fill="c" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
-          </svg>
-        </button>
+        <div class="yeap">
+          <a href="pricing.html" class="pricingBtn">Pricing</a>
+          <a href="contactUs.html" class="contactBtn">Contact us</a>
+          <a
+            href="https://app.savemybusiness.com.ng/auth/customer-register"
+            target="_blank"
+            class="contactBtn"
+            >Get Started</a
+          >
+          <button class="mobView" id="menuBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
+              <path fill="c" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+            </svg>
+          </button>
+        </div>
       </div>
       <div id="overlay" class="overlay"></div>
 
@@ -43,7 +60,12 @@
         <button class="closeBtn" id="closeBtn">&times;</button>
         <ul>
           <li class="links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
               <!-- Icon from Huge Icons by Hugeicons - undefined -->
               <g fill="none" stroke="#4B5563" stroke-width="1.5">
                 <path
@@ -59,7 +81,90 @@
             <a href="contactUs.html">Contact Us</a>
           </li>
           <li class="links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 16 16"
+            >
+              <!-- Icon from OpenSearch UI by OpenSearch Contributors - https://github.com/opensearch-project/oui/blob/main/LICENSE.txt -->
+              <path
+                fill="none"
+                stroke="#4B5563"
+                stroke-width="0.5"
+                d="M9.499 15.09a.41.41 0 0 1-.41.41h-2.18a.41.41 0 0 1 0-.818H9.09a.41.41 0 0 1 .409.409m-1.5-7.772a.682.682 0 1 0 0-1.363a.682.682 0 0 0 0 1.363m6.386 3.096l-.843 3.79a.955.955 0 0 1-1.52.546l-1.896-1.432H5.874L3.976 14.75a.954.954 0 0 1-1.523-.545l-.84-3.791a.96.96 0 0 1 .198-.818l1.977-2.37c.061-.86.256-1.704.578-2.503C5.233 2.549 6.788 1.186 7.416.7a.955.955 0 0 1 1.17 0c.628.486 2.181 1.85 3.05 4.023c.321.799.516 1.643.578 2.503l1.977 2.37a.96.96 0 0 1 .194.818M5.971 12.5h4.055c1.495-2.622 1.781-5.136.848-7.474c-.815-2.045-2.342-3.332-2.79-3.681a.136.136 0 0 0-.17 0c-.449.347-1.977 1.636-2.79 3.681c-.934 2.338-.648 4.852.847 7.474m-.768.3c-.818-1.465-1.288-2.904-1.406-4.308L2.44 10.119a.14.14 0 0 0-.028.117l.843 3.793a.136.136 0 0 0 .218.077l.01-.007zm8.357-2.68l-1.356-1.628c-.117 1.404-.586 2.843-1.406 4.308l1.72 1.295l.01.008a.14.14 0 0 0 .13.022a.14.14 0 0 0 .087-.099l.844-3.79a.14.14 0 0 0-.031-.117z"
+              />
+            </svg>
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Huge Icons by Hugeicons - undefined
+              <g fill="none" stroke="#4B5563" stroke-width="1.5">
+                <path
+                  d="M4.5 10c0-3.771 0-5.657 1.172-6.828S8.729 2 12.5 2H14c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10v4c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-1.5c-3.771 0-5.657 0-6.828-1.172S4.5 17.771 4.5 14z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 6H2m2.5 6H2m2.5 6H2m13.275-9.507a2 2 0 1 1-4 0a2 2 0 0 1 4 0M9.32 15.716c1.058-1.63 2.739-2.24 3.955-2.239s2.847.61 3.906 2.24a.33.33 0 0 1 .025.344c-.247.439-1.016 1.31-1.57 1.369c-.638.067-2.307.077-2.36.077s-1.773-.01-2.41-.077c-.556-.06-1.324-.93-1.572-1.37c-.061-.109-.043-.238.026-.344"
+                />
+              </g>
+            </svg> -->
+            <a
+              href="https://app.savemybusiness.com.ng/auth/customer-register"
+              target="_blank"
+              >Get Started</a
+            >
+          </li>
+          <li class="links">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <!-- Icon from Carbon by IBM - undefined -->
+              <path
+                fill="none"
+                stroke="#4B5563"
+                d="M16 2v2c6.63 0 12 5.37 12 12s-5.37 12-12 12v2c7.73 0 14-6.27 14-14S23.73 2 16 2M8.24 25.14l-1.29 1.53c1.23 1.04 2.64 1.87 4.18 2.44l.68-1.88c-1.32-.49-2.53-1.2-3.58-2.09zM4.19 18l-1.97.41c.28 1.63.84 3.16 1.64 4.54L5.59 22c-.68-1.18-1.16-2.61-1.4-4m1.4-8L3.86 9c-.79 1.38-1.35 2.96-1.64 4.59l1.97.35c.24-1.39.72-2.75 1.4-3.93zm6.23-5.24l-.68-1.88c-1.54.57-2.95 1.4-4.18 2.44l1.29 1.53c1.05-.89 2.26-1.6 3.58-2.09z"
+              />
+              <path
+                fill="none"
+                stroke="#4B5563"
+                d="M21 12v-2h-4V7h-2v3h-2c-1.103 0-2 .897-2 2v3c0 1.103.897 2 2 2h6v3h-8v2h4v3h2v-3h2c1.103 0 2-.897 2-2v-3c0-1.103-.897-2-2-2h-6v-3z"
+              />
+            </svg>
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Huge Icons by Hugeicons - undefined 
+              <g fill="none" stroke="#4B5563" stroke-width="1.5">
+                <path
+                  d="M4.5 10c0-3.771 0-5.657 1.172-6.828S8.729 2 12.5 2H14c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10v4c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-1.5c-3.771 0-5.657 0-6.828-1.172S4.5 17.771 4.5 14z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 6H2m2.5 6H2m2.5 6H2m13.275-9.507a2 2 0 1 1-4 0a2 2 0 0 1 4 0M9.32 15.716c1.058-1.63 2.739-2.24 3.955-2.239s2.847.61 3.906 2.24a.33.33 0 0 1 .025.344c-.247.439-1.016 1.31-1.57 1.369c-.638.067-2.307.077-2.36.077s-1.773-.01-2.41-.077c-.556-.06-1.324-.93-1.572-1.37c-.061-.109-.043-.238.026-.344"
+                />
+              </g>
+            </svg> -->
+            <a href="pricing.html">Pricing</a>
+          </li>
+          <li class="links">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
               <path
                 fill="none"
                 stroke="#4B5563"
@@ -69,11 +174,18 @@
             <a href="privacyAndPolicy.html">Privacy Policy</a>
           </li>
           <li class="links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+            >
               <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
               <g fill="none" stroke="#4B5563" stroke-width="1.5">
                 <circle cx="9" cy="9" r="2" />
-                <path d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2s1.79-2 4-2s4 .895 4 2Z" />
+                <path
+                  d="M13 15c0 1.105 0 2-4 2s-4-.895-4-2s1.79-2 4-2s4 .895 4 2Z"
+                />
                 <path
                   d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"
                 />
@@ -88,26 +200,39 @@
       <div class="content">
         <div class="mainOne">
           <div class="device-group">
-            <img src="images/last-edit-removebg-preview.png" class="dash laptop" alt="Laptop" />
+            <img
+              src="images/last-edit-removebg-preview.png"
+              class="dash laptop"
+              alt="Laptop"
+            />
           </div>
         </div>
 
         <div class="app-section">
           <h1>SMB Dashboard</h1>
           <p>
-            The trusted solution for <strong>every day-day activties, business, and institution</strong> — designed
-            to streamline operations, improve optimize delivery, and give you more time to focus
-            on what matters most.
+            The trusted solution for
+            <strong>every day-day activties, business, and institution</strong>
+            — designed to streamline operations, improve optimize delivery, and
+            give you more time to focus on what matters most.
           </p>
           <div class="btnpop">
             <button class="download-btn" id="getApp">
               <a href="#cta-section" class="A">
-                <img src="images/playStore.png" alt="Play Store" class="btn-icon" />
+                <img
+                  src="images/playStore.png"
+                  alt="Play Store"
+                  class="btn-icon"
+                />
                 <span>Get on Play Store</span>
               </a>
             </button>
             <button class="download-btn2">
-              <a href="https://app.savemybusiness.com.ng/" target="_blank" class="A">
+              <a
+                href="https://app.savemybusiness.com.ng/"
+                target="_blank"
+                class="A"
+              >
                 <span>View Dashboard</span>
               </a>
             </button>
@@ -121,8 +246,9 @@
           <div class="overview-text">
             <h2>Stay on Top of It All</h2>
             <p>
-              Everything you need to manage your store efficiently is right here. Track performance,
-              manage inventory, and get actionable insights — all from one intuitive dashboard.
+              Everything you need to manage your store efficiently is right
+              here. Track performance, manage inventory, and get actionable
+              insights — all from one intuitive dashboard.
             </p>
             <ul class="overview-list">
               <li>
@@ -145,8 +271,9 @@
                   <circle cx="16" cy="16" r="6" />
                   <rect x="8" y="2" width="8" height="4" rx="1" />
                 </svg>
-                <strong>Reporting & Analytics</strong> Sales, profit, and stock reports. Track
-                top/slow-moving items, customer performance, and activity logs.
+                <strong>Reporting & Analytics</strong> Sales, profit, and stock
+                reports. Track top/slow-moving items, customer performance, and
+                activity logs.
               </li>
               <li>
                 <svg
@@ -167,8 +294,9 @@
                   <path d="M12 7v4" />
                   <path d="M16 7v9" />
                 </svg>
-                <strong>Inventory Control</strong> Monitor live stock, get low-stock alerts, manage
-                products & pricing, and bulk import via CSV.
+                <strong>Inventory Control</strong> Monitor live stock, get
+                low-stock alerts, manage products & pricing, and bulk import via
+                CSV.
               </li>
               <li>
                 <svg
@@ -190,8 +318,8 @@
                   <path d="M12 7v10" />
                   <path d="M15.4 10a4 4 0 1 0 0 4" />
                 </svg>
-                <strong>Sales Processing</strong> Two-step ordering, payment confirmation, full
-                order history, and sales/returns management.
+                <strong>Sales Processing</strong> Two-step ordering, payment
+                confirmation, full order history, and sales/returns management.
               </li>
             </ul>
           </div>
@@ -203,8 +331,12 @@
       </section>
 
       <div class="center-container">
-        <a href="https://app.savemybusiness.com.ng/" class="dashboard-btn" target="_blank">
-          View Dashboard
+        <a
+          href="https://app.savemybusiness.com.ng/auth/customer-register"
+          class="dashboard-btn"
+          target="_blank"
+        >
+          Get Started
         </a>
       </div>
 
@@ -230,8 +362,8 @@
             </svg>
             <h3>Dashboard</h3>
             <p>
-              Real-time business overview. Track live sales & profit metrics. View top sellers at a
-              glance. Key inventory & customer insights.
+              Real-time business overview. Track live sales & profit metrics.
+              View top sellers at a glance. Key inventory & customer insights.
             </p>
           </div>
           <div class="feature-card">
@@ -251,12 +383,17 @@
               <path d="M10 2v2.343" />
               <path d="M14 2v6.343" />
               <path d="m2 2 20 20" />
-              <path d="M20 20a2 2 0 0 1-2 2H6a2 2 0 0 1-1.755-2.96l5.227-9.563" />
+              <path
+                d="M20 20a2 2 0 0 1-2 2H6a2 2 0 0 1-1.755-2.96l5.227-9.563"
+              />
               <path d="M6.453 15H15" />
               <path d="M8.5 2h7" />
             </svg>
             <h3>Product Tracking</h3>
-            <p>Stay ahead with automatic alerts for new products, or out of date products.</p>
+            <p>
+              Stay ahead with automatic alerts for new products, or out of date
+              products.
+            </p>
           </div>
           <div class="feature-card">
             <svg
@@ -274,8 +411,8 @@
             </svg>
             <h3>Customer Management</h3>
             <p>
-              Detailed customer database. Add, Edit customer info. Track purchase history & total
-              sales. Generate sales receipts.
+              Detailed customer database. Add, Edit customer info. Track
+              purchase history & total sales. Generate sales receipts.
             </p>
           </div>
           <div class="feature-card">
@@ -293,12 +430,16 @@
               class="lucide lucide-clipboard-plus-icon lucide-clipboard-plus"
             >
               <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+              <path
+                d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+              />
               <path d="M9 14h6" />
               <path d="M12 17v-6" />
             </svg>
             <h3>Sales Reports</h3>
-            <p>Access daily, weekly, and monthly reports with clear insights.</p>
+            <p>
+              Access daily, weekly, and monthly reports with clear insights.
+            </p>
           </div>
           <div class="feature-card">
             <svg
@@ -320,8 +461,8 @@
             </svg>
             <h3>Administration Tools</h3>
             <p>
-              Manage staff user accounts. Create custom user roles. Control permissions & feature
-              access. Securely manage your team.
+              Manage staff user accounts. Create custom user roles. Control
+              permissions & feature access. Securely manage your team.
             </p>
           </div>
           <div class="feature-card">
@@ -344,7 +485,9 @@
               <path d="m9 12 2 2 4-4" />
             </svg>
             <h3>Secure & Reliable</h3>
-            <p>Keep your business data safe with cloud backup and encryption.</p>
+            <p>
+              Keep your business data safe with cloud backup and encryption.
+            </p>
           </div>
         </div>
       </section>
@@ -366,37 +509,56 @@
         <h2 class="section-title">What Our Users Say</h2>
         <div class="testimonials-container">
           <div class="testimonial-card">
-            <img src="images/blackNurse (1).jpg" alt="User photo" class="user-photo" />
+            <img
+              src="images/blackNurse (1).jpg"
+              alt="User photo"
+              class="user-photo"
+            />
             <p class="quote">
-              "SMB completely changed how we manage our business. It's fast, intuitive, and
-              reliable!"
+              "SMB completely changed how we manage our business. It's fast,
+              intuitive, and reliable!"
             </p>
             <h4 class="user-name">David K.</h4>
             <span class="user-role">Store Manager</span>
           </div>
 
           <div class="testimonial-card">
-            <img src="images/woman (1).jpg" alt="User photo" class="user-photo" />
+            <img
+              src="images/woman (1).jpg"
+              alt="User photo"
+              class="user-photo"
+            />
             <p class="quote">
-              "Tracking inventory and sales has never been easier. Highly recommend SMB."
+              "Tracking inventory and sales has never been easier. Highly
+              recommend SMB."
             </p>
             <h4 class="user-name">Sarah J.</h4>
             <span class="user-role">Business Owner</span>
           </div>
 
           <div class="testimonial-card">
-            <img src="images/frankie-cordoba-8ecjetoN30E-unsplash (1).jpg" alt="User photo" class="user-photo" />
+            <img
+              src="images/frankie-cordoba-8ecjetoN30E-unsplash (1).jpg"
+              alt="User photo"
+              class="user-photo"
+            />
             <p class="quote">
-              "The dashboard gives me all the insights I need in real-time. Game changer!"
+              "The dashboard gives me all the insights I need in real-time. Game
+              changer!"
             </p>
             <h4 class="user-name">Linda M.</h4>
             <span class="user-role">Business Owner</span>
           </div>
 
           <div class="testimonial-card">
-            <img src="images/shariza-hawat-abwxZFG8Wd4-unsplash (1).jpg" alt="User photo" class="user-photo" />
+            <img
+              src="images/shariza-hawat-abwxZFG8Wd4-unsplash (1).jpg"
+              alt="User photo"
+              class="user-photo"
+            />
             <p class="quote">
-              "SMB’s reports and analytics help me make smarter business decisions every day."
+              "SMB’s reports and analytics help me make smarter business
+              decisions every day."
             </p>
             <h4 class="user-name">Mark T.</h4>
             <span class="user-role">Business Manager</span>
@@ -410,7 +572,11 @@
             alt="Store logo"
             class="logo-img"
           />
-          <img src="images/download__1_-removebg-preview.png" alt="Clinic logo" class="logo-img" />
+          <img
+            src="images/download__1_-removebg-preview.png"
+            alt="Clinic logo"
+            class="logo-img"
+          />
           <!-- <img src="images/7727497-removebg-preview.png" alt="Pharmacy logo" class="logo-img" /> -->
           <img
             src="images/fuedubufbubuwbeufbewfe.png"
@@ -428,13 +594,18 @@
         <div class="cta-container">
           <h2>Everything you need in one dashboard</h2>
           <p>
-            SMB makes it simple to manage sales, inventory, customers, reports, and staff
-            roles securely — so you can focus on growing your business.
+            SMB makes it simple to manage sales, inventory, customers, reports,
+            and staff roles securely — so you can focus on growing your
+            business.
           </p>
 
           <div class="cta-buttons">
             <button class="download-btn">
-              <img src="images/playStore.png" alt="Play Store" class="btn-icon" />
+              <img
+                src="images/playStore.png"
+                alt="Play Store"
+                class="btn-icon"
+              />
               <span>Download the App</span>
             </button>
 
@@ -454,14 +625,11 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-column footer-about">
-          <img
-            src="images/SMB_Logo.png"
-            alt="SMB logo"
-            class="footer-logo"
-          />
+          <img src="images/SMB_Logo.png" alt="SMB logo" class="footer-logo" />
           <p class="footer-desc">
-            The trusted solution for business, shops, institutions, and day2day — designed to streamline
-            operations and improve and optimize delivery.
+            The trusted solution for business, shops, institutions, and day2day
+            — designed to streamline operations and improve and optimize
+            delivery.
           </p>
         </div>
 
@@ -471,7 +639,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="privacyAndPolicy.html">Privacy and policy</a></li>
             <li><a href="termsOfUse.html">Terms of use</a></li>
-            <li><a href="deleteMyAccount.html">How to delete account</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contactUs.html">Contact</a></li>
           </ul>
         </div>
@@ -483,7 +651,10 @@
               <img src="images/playStore.png" alt="Play Store" />
             </a>
             <a href="#" class="store-btn2" aria-label="Download on App Store">
-              <img src="images/Anuradha_Kumari_says_-removebg-preview.png" alt="App Store" />
+              <img
+                src="images/Anuradha_Kumari_says_-removebg-preview.png"
+                alt="App Store"
+              />
             </a>
           </div>
 
@@ -543,7 +714,14 @@
 
       <div class="footer-bottom">
         <div class="footer-bottom-inner">
-          <span>© 2025 SMB. All rights reserved.</span>
+          <a
+            href="https://www.gesoftech.com/"
+            target="_blank"
+            class="footer-credit"
+          >
+            A product from © Golden Edge Softech
+          </a>
+
           <nav class="footer-legal">
             <a href="privacyAndPolicy.html">Privacy and policy</a>
             <a href="termsOfUse.html">Terms of use</a>
